@@ -5,8 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
-        <div id="app"></div>
+        <span style="display: flex; flex-direction: column;">
+            There is a blue square
+            <div style="width: 50px; height: 50px; background-color: steelblue"></div>
+            in between text.
+        </span>
+        <br />
+        <canvas id="app"></canvas>
         <script src="build/index.js" charset="utf-8"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script>
+            const mainText = new Text({
+                children: ['There is a blue square'],
+            });
+        </script>
     </body>
 </html>

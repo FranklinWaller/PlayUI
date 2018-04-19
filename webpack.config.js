@@ -8,7 +8,7 @@ module.exports = {
         extensions: ['.js', '.jsx'],
     },
     entry: {
-        index: ['./index.js'],
+        index: ['./index.js', './srcTest/srcTest.js'],
     },
     output: {
         path: path.resolve(__dirname, './build/'),
